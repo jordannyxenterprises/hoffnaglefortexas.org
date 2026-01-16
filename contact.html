@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Hoffnagle for Texas</title>
+  <meta name="description" content="Contact the Hoffnagle for Texas campaign. Volunteer, request a yard sign, or send a message." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <strong>Hoffnagle for Texas</strong>
+      <span>Texas House District 100</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="REPLACE_WITH_ANEDOT_URL" target="_blank" rel="noopener">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="kicker">Contact</p>
+        <h1 class="h1" style="font-size:34px;">Get in touch</h1>
+        <p class="lede">
+          Want to volunteer, host a meet-and-greet, request a yard sign, or ask a question?
+          Send a message and our team will respond.
+        </p>
+
+        <div class="card">
+          <p class="kicker">Direct links</p>
+          <div style="display:grid; gap:10px;">
+            <a class="btn" href="mailto:hoffnaglefortexas@gmail.com">Email: hoffnaglefortexas@gmail.com</a>
+            <a class="btn" href="REPLACE_WITH_FACEBOOK_URL" target="_blank" rel="noopener">Facebook</a>
+            <a class="btn btn-primary" href="REPLACE_WITH_ANEDOT_URL" target="_blank" rel="noopener">Donate</a>
+          </div>
+          <p class="small" style="margin-top:12px;">
+            Tip: If you don’t hear back within 24–48 hours, email us directly.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="notice">
+          <strong>One-time setup:</strong> to make this form email you, create a free Formspree form and replace the
+          <em>action</em> URL below with your Formspree endpoint.
+        </div>
+
+        <!-- Replace THIS action URL with your Formspree endpoint -->
+        <form class="card form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <!-- Helps you know where it came from -->
+          <input type="hidden" name="_subject" value="New message from HoffnagleForTexas.com" />
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+
+          <p class="small" style="margin:0;">
+            By submitting, you agree we may contact you back about the campaign.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span class="badge">Paid for by Hoffnagle for Texas</span>
+    <span class="small">© <span id="y"></span> Hoffnagle for Texas</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
