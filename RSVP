@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RSVP &mdash; Jordan Hoffnagle for Texas House District 100</title>
+<meta name="description" content="Register for an upcoming meet and greet with Jordan Hoffnagle, Republican candidate for Texas House District 100." />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .form-wrap{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-top: 18px;
+  }
+  .form-wrap iframe{
+    display:block;
+    width:100%;
+    height:850px;
+    border:0;
+    background:#fff;
+  }
+  @media (max-width: 640px){
+    .form-wrap iframe{ height:1000px; }
+  }
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container header-inner">
+<a class="brand" href="index.html">
+<strong>Hoffnagle for Texas</strong>
+<span>Texas House District 100</span>
+</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a class="btn btn-primary" href="https://secure.anedot.com/hoffnaglefortexas/donate" target="_blank" rel="noopener">Donate</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="container">
+<p class="kicker">Meet &amp; Greet</p>
+<h1 class="h1">Register for the Event</h1>
+<p class="lede">
+Sign up below so we can save you a seat. Have a question for Jordan?
+Submit it with your registration and we&rsquo;ll cover as many as we can during Q&amp;A time.
+</p>
+
+<div class="form-wrap">
+<!-- PASTE YOUR GOOGLE FORM EMBED URL IN THE src BELOW -->
+<iframe
+  src="https://docs.google.com/forms/d/e/1FAIpQLScki8_Aagazz-a-5dHlh8MkpRpsyXPLaqMjj7UaGuu-ryXjAw/viewform?embedded=true"
+  title="Meet and Greet Registration"
+  loading="lazy">
+  Loading&hellip;
+</iframe>
+</div>
+
+<p class="small" style="margin-top:14px;">
+Form not loading? <a href="https://docs.google.com/forms/d/e/1FAIpQLScki8_Aagazz-a-5dHlh8MkpRpsyXPLaqMjj7UaGuu-ryXjAw/viewform" target="_blank" rel="noopener">Open the registration form in a new tab</a>
+or email us at <a href="mailto:hoffnaglefortexas@gmail.com">hoffnaglefortexas@gmail.com</a>.
+</p>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<p class="small">Pol. adv. paid for by Hoffnagle for Texas.</p>
+</div>
+</footer>
+</body>
+</html>
