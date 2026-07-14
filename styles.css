@@ -271,3 +271,59 @@ textarea{ min-height:150px; resize:vertical; }
 }
 .district-banner-right{
   background: #e8eaed;
+  display:flex;
+}
+.district-banner-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+@media (max-width: 700px){
+  .district-banner-grid{
+    grid-template-columns: 1fr;
+    min-height:auto;
+  }
+  .district-banner-left{
+    border-right:none;
+    border-bottom:1px solid var(--border);
+    padding: 24px 18px;
+  }
+  .district-banner-heading{ font-size:26px; margin-bottom:18px; }
+  .district-banner-right img{
+    min-height:240px;
+    max-height:340px;
+  }
+}
+
+/* ===== About page portrait layout ===== */
+.about-hero-grid{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+  gap: 26px;
+  align-items:start;
+  margin-top:18px;
+}
+.about-portrait{
+  max-width: 300px;
+}
+.about-portrait img{
+  width:100%;
+  max-width:300px;
+  height:auto;
+  display:block;
+  border-radius: var(--radius);
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.about-text{ min-width: 0; }
+@media (max-width: 700px){
+  .about-hero-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .about-portrait{
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
