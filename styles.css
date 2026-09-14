@@ -327,3 +327,91 @@ textarea{ min-height:150px; resize:vertical; }
     margin: 0 auto;
   }
 }
+
+/* ===== Hero photo (home page) ===== */
+.hero-photo{
+  margin-bottom:14px;
+}
+.hero-photo img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius: var(--radius);
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.hero-photo .caption{
+  font-size:12px;
+  color: var(--muted);
+  margin:8px 2px 0;
+}
+
+/* ===== Issues page ===== */
+.issue-group{
+  margin-top:30px;
+}
+.issue-group h2{
+  margin:0 0 4px;
+  font-size:21px;
+}
+.issue-group .group-note{
+  font-size:13px;
+  color: var(--muted);
+  margin:0 0 14px;
+  max-width:720px;
+}
+.issue{
+  border-top:1px solid var(--border);
+  padding:16px 0;
+}
+.issue:last-child{ border-bottom:1px solid var(--border); }
+.issue h3{
+  margin:0 0 6px;
+  font-size:16px;
+  letter-spacing:-.1px;
+}
+.issue p{
+  margin:0;
+  font-size:14px;
+  color: var(--muted);
+  max-width:820px;
+}
+.issue ul{
+  margin:8px 0 0 18px;
+  padding:0;
+  color: var(--muted);
+  font-size:13px;
+}
+.issue ul li{ margin:5px 0; }
+.bill-tag{
+  display:inline-block;
+  font-size:10px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid rgba(239,68,68,.45);
+  background: rgba(239,68,68,.14);
+  color: rgba(254,202,202,.95);
+  margin-left:8px;
+  vertical-align:middle;
+}
+.toc{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:14px 0 0;
+}
+.toc a{
+  font-size:13px;
+  padding:8px 11px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.05);
+  color: var(--muted);
+}
+.toc a:hover{
+  text-decoration:none;
+  color: var(--text);
+  background: rgba(255,255,255,.09);
+}
